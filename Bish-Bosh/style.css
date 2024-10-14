@@ -1,0 +1,30 @@
+header {
+    min-height: 40px;
+    background-color: blanchedalmond;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 30px;
+}
+
+#button {
+    background-color: green;
+}
+
+#bish-bosh {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 15px;
+    background-color:blanchedalmond;
+    width: 100%;
+    min-height: 60px;
+    position: fixed;
+    bottom: 0;
+}
