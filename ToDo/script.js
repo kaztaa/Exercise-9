@@ -3,11 +3,13 @@ let theList = [];
 
 // Add to list function
 function addToList() {
-    const value = document.getElementById('to-list').value;
+    //const value = document.getElementById('to-list').value;
+    const value = document.querySelector('#to-list').value;
     
     if (value.trim() !== "") {
         theList.push(value);
-        document.getElementById('to-list').value = "";
+        //document.getElementById('to-list').value = "";
+        document.querySelector('#to-list').value = "";
     }
 
     displayList();
@@ -15,7 +17,7 @@ function addToList() {
 
 // Display list funtion
 function displayList() {
-    const listElement = document.getElementById('the-list');
+    const listElement = document.querySelector('#to-list');
     listElement.innerHTML = ""; // Empty list
 
     theList.forEach((item, index) => {

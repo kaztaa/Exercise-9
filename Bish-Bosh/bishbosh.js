@@ -5,25 +5,24 @@ function bishBosh() {
     while (num > i) {
            
         if ( i % 3 == 0 && num % 4 == 0 ) {  
-            console.log("bish-bosh");
+            console.log('bish-bosh');
         }
         else if ( i % 3 == 0){
-            console.log("bish");
+            console.log('bish');
         }
         else if ( i % 4 == 0)
-            console.log("bosh");
+            console.log('bosh');
         else
             console.log(i); 
         i++;
     }
-
 }
 
-
 function bishBoshTwo(firstNum, secondNum, endNum) {
-    firstNum = document.getElementById('firstNum').value;
-    secondNum = document.getElementById('secondNum').value;
-    endNum = document.getElementById('endNum').value;
+
+    firstNum = document.querySelector('#firstNum').value;
+    secondNum = document.querySelector('#secondNum').value;
+    endNum = document.querySelector('#endNum').value;
     
     i = 0;
     let output = [];
@@ -31,21 +30,20 @@ function bishBoshTwo(firstNum, secondNum, endNum) {
     while (endNum > i) {
         i++;
         if ( i % firstNum == 0 && i % secondNum == 0 )  
-            output.push("bish-bosh");
+            output.push('bish-bosh');
         else if ( i % firstNum == 0)
-            output.push("bish");
+            output.push('bish');
         else if ( i % secondNum == 0)
-            output.push("bosh");
+            output.push('bosh');
         else
             output.push(i);
     }
 
-    document.getElementById('bish-bosh').innerHTML = output;
-
+    document.querySelector('#bish-bosh').innerHTML = output;
 }
 
-// Adderar lyssnare för knappen
-document.getElementById("button").addEventListener("click", bishBoshTwo);
+// Click event listener for #button 
+document.querySelector('#button').addEventListener('click', bishBoshTwo);
 
 
 
